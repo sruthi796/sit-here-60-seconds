@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Sit Here For 60 Seconds</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="app">
+
+    <div id="main-screen">
+      <p id="tagline">sit here for</p>
+      <div id="timer-wrap">
+        <div id="timer">60</div>
+        <div id="timer-ring">
+          <svg viewBox="0 0 120 120" id="ring-svg">
+            <circle class="ring-bg" cx="60" cy="60" r="54"/>
+            <circle class="ring-fill" cx="60" cy="60" r="54" id="ring-progress"/>
+          </svg>
+        </div>
+      </div>
+      <p id="seconds-label">seconds</p>
+      <div id="milestone-msg"></div>
+    </div>
+
+    <div id="cat-layer"></div>
+
+    <div id="tab-msg" class="hidden">where did u go</div>
+
+    <div id="ending-screen" class="hidden">
+      <div id="flash-overlay"></div>
+      <canvas id="confetti-canvas"></canvas>
+      <div id="ending-cat-wrap">
+        <img id="ending-cat" src="" alt="final cat" />
+      </div>
+      <div id="ending-text">
+        <h1 id="ending-headline"></h1>
+        <p id="ending-sub"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
